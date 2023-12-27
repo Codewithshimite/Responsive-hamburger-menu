@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+   body{
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+   nav{
+    background-color: whitesmoke;
+   }
+    
+    
+   nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   }
+   nav li{
+    height: 50px;
+   }
+   nav a{
+    height: 100%;
+    padding:0 30px ;
+    display: flex;
+    align-items: center;
+     color: black;
+     text-decoration: none;
+   }
+  
+   nav a:hover{
+    color: #c77b7b;
+   }
+   nav a:active{
+   opacity:  0.5
+   }
+
+   nav li:first-child{
+    margin-right: auto;
+
+   }
+
+   .side-bar{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: whitesmoke;
+    box-shadow: -10px 0 10px rgb(205, 186, 186);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur (10px);
+
+   }
+
+   .side-bar li{
+    width: 100%;
+
+   }
+   .side-bar a{
+
+    width: 100%;
+   }
+   .menu-button{
+    display: none;
+   }
+
+
+   .logo{
+    width: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 30px;
+   }
+
+
+   .close-style:hover{
+    width: 20px;
+    transition: 0.7sec;
+
+
+   }
+
+ 
+
+
+
+@media(max-width:800px){
+
+  .hideOnMobile{
+    display:none;
+  }
+  .menu-button{
+    display: block;
+   }
+
+  .menu-button:hover{
+   background-color: #c2abab;
+   }
+  .menu-button:active{
+   opacity:0.5
+   }
+   
+  }
+
+
+
+
+@media(max-width: 400px){
+  
+  .side-bar{
+    width: 100%;
+  }
+}
